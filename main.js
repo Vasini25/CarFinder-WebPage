@@ -1,6 +1,9 @@
-var carro = new Vue({
-el: 'carro'
-data: {
-    nome: 'Audi A4'
-}
+var audiA4 = new Vue({
+    el: '#audiA4',
+    data: {
+        modelo: 'Audi A4',
+        ano: '2020',
+        image: '\carTemplate.png',
+        alt: 'Audi A4.'
+    }
 })

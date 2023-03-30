@@ -1,0 +1,42 @@
+/*Style sheet*/
+
+
+body {
+  background-color: white;
+}
+
+    h1 {
+      margin: 3%;
+      color: blue;
+    }
+
+    h2 {
+      margin: 3%;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin: 3%;
+    }
+
+    .car {
+      background: lightgrey;
+      border-radius: 30px;
+      padding: 50px;
+      margin-top: 50px;
+      margin-left: 100px;
+      margin-bottom: 25px;
+      margin-right: 1400px;
+      border: 5px solid black;
+      cursor: pointer;
+      
+    }
+
+    img {
+      width: 300px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
