@@ -7,3 +7,11 @@ var audiA4 = new Vue({
         alt: 'Audi A4.'
     }
 })
+
+var logo = new Vue({
+    el:'#navebar',
+    data: {
+        logomarca: '\logoSimplificada.png',
+        alt: 'Logo CarFinder.'
+    } 
+})
