@@ -51,7 +51,7 @@ body {
       cursor: pointer;
     }
 
-    .navebar {
+    .navbar {
       background: white;
       margin-left: -10px;
       margin-top: -10px;
@@ -60,4 +60,11 @@ body {
       /*border: 2px solid black;*/
       box-shadow: 0px 10px 75px #888888;
       /*box-shadow: 0px 100px inset #888888;*/
+    }
+
+    .navbarText {
+      display: inline-block;
+      font-size: 25px;
+      margin-left: 100px;
+      cursor: pointer;
     }
