@@ -16,6 +16,7 @@ var audiA4 = new Vue({
         alt: 'Audi A4 cinza chumbo, mostrado à 45 graus.',
         carPage: "car.html",
         disponivel: true,
+        preço: 'R$ 300.000',
         quantidade: 2,
     }
 })
