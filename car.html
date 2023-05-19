@@ -38,6 +38,7 @@
             <h3 v-else-if="quantidade < 10 && quantidade > 0">Últimas unidades!</h3>
             <h3 v-else>Indisponível</h3>
 
+             <!-- exemplo de uso de v-for -->
             <ul>
                 <li v-for="detalhe in detalhes">
                     <h4>{{ detalhe }}</h4>
@@ -45,9 +46,14 @@
             </ul>
         </span>
 
+         <!-- exemplo de uso de v-for + listas de "structs"-->
         <div v-for="pot in potencias" :key="pot.id">
             <h3>{{ pot.cilindros }}</h3>
             <h3>{{ pot.cilindradas }}</h3>
+        </div>
+
+        <div>
+            <h3> Disponíveis: {{ quantidade }}</h3>
         </div>
 
     </div>
