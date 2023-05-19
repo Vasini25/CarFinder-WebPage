@@ -27,6 +27,11 @@
             :alt="alt"/>
         </span>
 
+        <!-- exemplo de uso de @ como v-on: com "mouseover" para mudar imagem principal -->
+        <div v-for="pint in pinturas" :key="pint.id">
+            <h3 @mouseover="atualizaImg(pint.foto)">{{ pint.cor }}</h3>
+        </div>
+
         <span>
             <h3>{{ modelo }}<br>{{ ano }}</h3>
 
@@ -52,12 +57,15 @@
             <h4>{{ pot.cilindradas }}</h4>
         </div>
 
+        <!-- exemplo de uso de v-on:click com funções de propriedade "methods" -->
+        <!-- v-on: = @ -->
+        <!-- utilizando junto o v-show -->
         <div>
             <h3> Disponíveis: {{ quantidade }}
-                <button v-on:click="quantidade++">
+                <button v-on:click="somaQtd">
                     <h3>Vender agora</h3>
                 </button>
-                <button v-on:click="quantidade--" v-show="quantidade > 0">
+                <button @click="subtraiQtd" v-show="quantidade > 0">
                     <h3>Comprar agora</h3>
                 </button>
             </h3>

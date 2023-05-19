@@ -12,7 +12,7 @@ var audiA4 = new Vue({
     data: {
         modelo: 'Audi A4',
         ano: '2020',
-        image: '\carTemplate.png',
+        image: './carTemplate.png',
         alt: 'Audi A4 cinza chumbo, mostrado à 45 graus.',
         carPage: "car.html",
         disponivel: true,
@@ -32,7 +32,35 @@ var audiA4 = new Vue({
                 cilindradas: "2600 cilindradas",
             },
         ],
-    }
+
+        pinturas: [
+            {
+                id: 1,
+                cor: "CHUMBO",
+                box: "black",
+                foto: './carTemplate.png',
+            },
+            {
+                id: 2,
+                cor: "PRATA",
+                box: "grey",
+                foto: './carTemplate2.png',
+            },
+        ],
+    },
+    methods: {
+        somaQtd() {
+            this.quantidade++
+        },
+
+        subtraiQtd() {
+            this.quantidade--
+        },
+
+        atualizaImg(foto) {
+            this.image = foto
+        },
+    },
 })
 
 var toyotaSupra = new Vue({
