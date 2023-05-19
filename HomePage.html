@@ -9,24 +9,34 @@
 </head>
 
 <body>
-<div id="navebar" class="navbar">
-    <img class="logo"   v-bind:src="logomarca" v-bind:alt="alt"/>
+<div id="navbar" class="navbar">
+  <a :href="homePage">
+    <img id="logo" class="logo"  :src="logomarca" :alt="alt" onclick="safeExit()"/>
+  </a>
 </div>
 
 <div id="titulo">
   <h1><br>Seu próximo automóvel <br>de alto padrão</h1>
 </div>
 
-<div id="audiA4" class="car">
+<div class="inlineBlock">
+  <div id="audiA4" class="carBullet">
 
-  <span>
-    <img v-bind:src="image" 
-      v-bind:alt="alt"/>
-  </span>
+    <a :href="carPage">
+      <span>
+        <img :src="image" 
+          :alt="alt"/>
+        
+        <h3 v-if="quantidade >= 10">Disponível</h3>
+        <h3 v-else-if="quantidade < 10 && quantidade > 0">Últimas unidades!</h3>
+        <h3 v-else>Indisponível</h3>
+      </span>
+    </a>
 
-  <span>
-      <h3>{{ modelo }}<br>{{ ano }}</h3>
-  </span>
+    <span>
+        <h3>{{ modelo }}<br>{{ ano }}</h3>
+    </span>
+  </div>
 </div>
 
 <div>
