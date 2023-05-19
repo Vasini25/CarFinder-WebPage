@@ -17,7 +17,7 @@ var audiA4 = new Vue({
         carPage: "car.html",
         disponivel: true,
         preço: 'R$ 300.000',
-        quantidade: 2,
+        quantidade: 7,
         detalhes: ["Direção hidráulica", "Freios ABS"],
 
         potencias: [

@@ -36,8 +36,8 @@
         <h3 v-show="disponivel"> {{ preço }}</h3>
 
         <!-- só é carregado no DOM quando a condição é verdadeira -->
-        <h3 v-if="quantidade >= 10">Disponível</h3>
-        <h3 v-else-if="quantidade < 10 && quantidade > 0">Últimas unidades!</h3>
+        <h3 v-if="quantidade >= 5">Disponível</h3>
+        <h3 v-else-if="quantidade < 5 && quantidade > 0">Últimas unidades!</h3>
         <h3 v-else>Indisponível</h3>
 
         <!-- exemplo de uso de v-for -->
