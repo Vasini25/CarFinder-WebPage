@@ -18,6 +18,20 @@ var audiA4 = new Vue({
         disponivel: true,
         preço: 'R$ 300.000',
         quantidade: 2,
+        detalhes: ["Direção hidráulica", "Freios ABS"],
+
+        potencias: [
+            {
+                id: 1,
+                cilindros: "V6",
+                cilindradas: "1800 cilindradas",
+            },
+            {
+                id: 2,
+                cilindros: "V8",
+                cilindradas: "2600 cilindradas",
+            },
+        ],
     }
 })
 

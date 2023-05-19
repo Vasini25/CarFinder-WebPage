@@ -39,7 +39,15 @@
         <h3 v-if="quantidade >= 10">Disponível</h3>
         <h3 v-else-if="quantidade < 10 && quantidade > 0">Últimas unidades!</h3>
         <h3 v-else>Indisponível</h3>
+
+        <!-- exemplo de uso de v-for -->
+        <ul>
+          <li v-for="detalhe in detalhes">
+            <h3>{{ detalhe }}</h3>
+          </li>
+        </ul>
     </span>
+
   </div>
 </div>
 
